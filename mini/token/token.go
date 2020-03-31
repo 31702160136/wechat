@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"time"
 	"wechat/mini/utils"
-	"zytool/common/sdk/wechat/wxtools"
 )
 
 type Token struct {

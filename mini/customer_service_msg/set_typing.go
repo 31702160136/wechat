@@ -3,7 +3,7 @@ package customer_service_msg
 import (
 	"errors"
 	"fmt"
-	"zytool/common/sdk/wechat/wxtools"
+	"wechat/mini/utils"
 )
 
 type Typing struct {
@@ -18,13 +18,13 @@ func (this *CustomerServiceMsg) SetTyping(model Typing) error {
 	header := make(map[string]string)
 	header["Content-Type"] = "application/json"
 
-	resJson, err := wxtools.Post(uri, model, header)
+	resJson, err := utils.Post(uri, model, header)
 	if err != nil {
 		return errors.New("发送失败：" + err.Error())
 	}
 
 	result := ErrorResult{}
-	err = wxtools.Transfer(resJson, &result)
+	err = utils.Transfer(resJson, &result)
 	if err != nil {
 		return errors.New("数据转换失败：" + err.Error())
 	}
