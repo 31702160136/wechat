@@ -1,8 +1,8 @@
 package mini
 
 import (
-	"wechat/mini/login"
-	"wechat/mini/token"
+	"github.com/31702160136/wechat/mini/login"
+	"github.com/31702160136/wechat/mini/token"
 )
 
 type WeChat struct {

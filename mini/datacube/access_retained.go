@@ -3,7 +3,7 @@ package datacube
 import (
 	"errors"
 	"fmt"
-	"wechat/mini/utils"
+	"github.com/31702160136/wechat/mini/utils"
 )
 
 type RetainResult struct {

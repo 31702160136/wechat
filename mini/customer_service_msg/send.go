@@ -3,8 +3,8 @@ package customer_service_msg
 import (
 	"errors"
 	"fmt"
+	"github.com/31702160136/wechat/mini/utils"
 	"reflect"
-	"wechat/mini/utils"
 )
 
 //发送文本消息

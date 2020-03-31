@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"wechat/mini/utils"
+	"github.com/31702160136/wechat/mini/utils"
 )
 
 

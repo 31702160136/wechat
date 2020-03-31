@@ -3,7 +3,7 @@ package subscribe_msg
 import (
 	"errors"
 	"fmt"
-	"wechat/mini/utils"
+	"github.com/31702160136/wechat/mini/utils"
 )
 type Subscribe struct {
 	appID  string
